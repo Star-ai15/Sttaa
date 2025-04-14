@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a1a2e);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.logo {
+  width: 100px;
+}
+.wallet-btn {
+  padding: 10px 20px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.connected-address {
+  color: #22c55e;
+}
+.slogan {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.products img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.warning {
+  color: #f87171;
+  margin-top: 1rem;
+}
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}
+a {
+  color: #60a5fa;
+}

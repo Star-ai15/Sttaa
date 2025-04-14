@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Token ($STAR)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    async function connectWallet() {
+      try {
+        const provider = window.phantom?.solana;
+        if (!provider?.isPhantom) {
+          alert("Phantom Wallet not found. Please install it.");
+          return;
+        }
+        const resp = await provider.connect();
+        document.getElementById("wallet-address").innerText = "Connected: " + resp.publicKey.toString();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Star Token Logo" class="logo"/>
+    <h1>Star Token ($STAR)</h1>
+    <p class="slogan">Real Finance. Real Utility. Real Future.</p>
+    <p><strong>Token Address:</strong> 7Hajt3Yc7MQhWwNsUAxdUgcLH7M59u1bDpZ79E5Zkmat</p>
+    <p><strong>Total Supply:</strong> 1,000,000,000 STAR</p>
+
+    <button onclick="connectWallet()" class="wallet-btn">Connect Phantom Wallet</button>
+    <p id="wallet-address" class="connected-address"></p>
+
+    <h2>Introducing Star Token ($STAR)</h2>
+    <p><strong>Real Finance. Real Utility. Real Future.</strong></p>
+    <p>Star Token ($STAR) is not a hype-driven memecoin or a vague whitepaper promise.</p>
+    <p>We are building a practical Web3-powered financial system — starting with a real-world payment token that integrates blockchain technology into actual business operations under a legally registered U.S. corporation.</p>
+
+    <h2>What Makes $STAR Different?</h2>
+    <ul>
+      <li><strong>Real-World Crypto Payments</strong>: $STAR is designed for real usage — from retail and wholesale payments to AI-integrated services.</li>
+      <li><strong>Web3 + AI Synergy</strong>: We’re integrating smart payments with future AI tools — making transactions faster, smarter, and more autonomous.</li>
+      <li><strong>Dual-Token Ecosystem</strong>: A second token is already in development to complement $STAR, expanding both utility and ecosystem value.</li>
+    </ul>
+
+    <h2>Token Allocation</h2>
+    <ul>
+      <li>30% - IDO Presale</li>
+      <li>20% - Large Allocation Presale (for Angel Investors, VCs)</li>
+      <li>15% - DEX Listing</li>
+      <li>10% - Team Shared Wallet</li>
+      <li>10% - Team Marketing Wallet</li>
+      <li>15% - Individual Team Wallets</li>
+    </ul>
+
+    <h2>Vision & Roadmap</h2>
+    <p>We are building a practical Web3-powered financial system under a legally registered U.S. corporation, with a real-world payment token at its core.</p>
+
+    <h3>Mid-April</h3>
+    <ul>
+      <li>IDO Launch & Distribution (1,050 SOL total)</li>
+      <li>350 SOL (20%) for larger investors (VCs, angels)</li>
+      <li>700 SOL (30%) for public presale</li>
+    </ul>
+
+    <h3>Late April – May</h3>
+    <ul>
+      <li>DEX listing on Orca or Raydium</li>
+      <li>Launch product sales</li>
+      <li>Accept $STAR for retail/wholesale payments</li>
+    </ul>
+
+    <h3>May – June</h3>
+    <ul>
+      <li>Second token development begins</li>
+      <li>Raise capital for expanded ecosystem</li>
+      <li>Dual-token integration & ecosystem validation</li>
+    </ul>
+
+    <h3>Mid–Late 2025</h3>
+    <ul>
+      <li>Launch AI-powered tools for payments, analytics, automation</li>
+      <li>Bridge AI and token-powered operations</li>
+    </ul>
+
+    <h2>Use of Funds</h2>
+    <p>Funds raised will be used for exchange listings, liquidity, marketing, team support, operations, and strategic needs to ensure project growth and stability.</p>
+
+    <h2>Presale Details</h2>
+    <h3>Public Presale (30%)</h3>
+    <p>Total: 700 SOL</p>
+    <p>Fee: 0.01 SOL | Min: 0.01 SOL | Max: 50 SOL</p>
+    <p>Wallet Address: <code>RwtrK6knmiYeTuJgNAo85jN7DUzVpFiJPBeyV4BFeqN</code></p>
+
+    <h3>VC / Angel Presale (20%)</h3>
+    <p>Total: 350 SOL</p>
+    <p>Fee: 0.01 SOL | Min: 1 SOL | Max: 150 SOL</p>
+    <p>Wallet Address: <code>8k2pViV4mKbeL5jv5QVwCr44VCtehnTzhDmtrRywjrFL</code></p>
+
+    <h2>Opal, Gems & Meteorite Sales</h2>
+    <div class="products">
+      <div>
+        <img src="opal-small.jpg" alt="Small Opal"/>
+        <p><strong>Small Opal</strong><br>0.02 SOL or 10,000,000 STAR</p>
+      </div>
+      <div>
+        <img src="opal-large.jpg" alt="Large Opal"/>
+        <p><strong>Large Opal</strong><br>0.05 SOL or 25,000,000 STAR</p>
+      </div>
+    </div>
+    <p><strong>Fee per purchase:</strong> 0.01 SOL</p>
+    <p><strong>Payment Wallet:</strong> FNVruuziVqeYor5xNkx2ENsndjonqiWLEMjnXUs7JuXe</p>
+    <p><strong>Buyer Must Submit:</strong> Name, Phone Number, Country, State, City, Full Address, Extra Info</p>
+    <p class="warning">* We recommend paying in SOL for now. STAR token prices are high before presale ends and will adjust post-launch.</p>
+
+    <footer>
+      <p>Follow us on <a href="https://x.com/StarToken15?t=0lTYkFOoR6fL7P91LxOr5Q&s=09" target="_blank">Twitter</a></p>
+    </footer>
+  </div>
+</body>
+</html>
